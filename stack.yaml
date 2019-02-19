@@ -1,0 +1,10 @@
+provider:
+  name: faas
+  gateway: https://gateway-url:8080
+
+functions:
+  serve:
+    lang: dockerfile
+    handler: ./serve
+    image: repo/serve-model:latest
+    imagePullPolicy: always
